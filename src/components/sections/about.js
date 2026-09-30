@@ -18,6 +18,7 @@ const StyledAboutSection = styled.section`
     }
   }
 `;
+
 const StyledText = styled.div`
   ul.skills-list {
     display: grid;
@@ -45,6 +46,7 @@ const StyledText = styled.div`
     }
   }
 `;
+
 const StyledPic = styled.div`
   position: relative;
   max-width: 300px;
@@ -64,8 +66,11 @@ const StyledPic = styled.div`
 
     &:hover,
     &:focus {
-      background: transparent;
       outline: 0;
+
+      &:before {
+        opacity: 1;
+      }
 
       &:after {
         top: 15px;
@@ -73,16 +78,16 @@ const StyledPic = styled.div`
       }
 
       .img {
-        filter: none;
-        mix-blend-mode: normal;
+        filter: grayscale(100%) contrast(1);
+        mix-blend-mode: multiply;
       }
     }
 
     .img {
       position: relative;
       border-radius: var(--border-radius);
-      mix-blend-mode: multiply;
-      filter: grayscale(100%) contrast(1);
+      mix-blend-mode: normal;
+      filter: none;
       transition: var(--transition);
     }
 
@@ -102,6 +107,8 @@ const StyledPic = styled.div`
       left: 0;
       background-color: var(--navy);
       mix-blend-mode: screen;
+      opacity: 0;
+      transition: var(--transition);
     }
 
     &:after {
@@ -132,7 +139,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript', 'Linux', 'Java', 'Python'];
+  const skills = ['Linux', 'Ansible', 'Bash', 'Python', 'JavaScript', 'Java'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -142,24 +149,29 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              I'm Sonu Kumar Kushwaha, a Linux System Administrator at{' '}
+              I’m{' '}
+              <a href="https://sonuimages.vercel.app/" target="_blank" rel="noopener noreferrer">
+                Sonu Kumar Kushwaha
+              </a>
+              , a Linux System Administrator at{' '}
               <a
                 href="https://singlebucks.blogspot.com/2024/01/wipro.html"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Wipro
+                Wipro Technologies
               </a>{' '}
-              and a technology enthusiast from Gopalganj, Bihar, India.
+              from Gopalganj, Bihar, India.
             </p>
+
             <p>
-              I hold an{' '}
+              I hold a{' '}
               <a
                 href="https://singlebucks.blogspot.com/p/bits-pilani.html"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                M.Tech
+                Master of Technology
               </a>{' '}
               in Computing Systems and Infrastructure from{' '}
               <a
@@ -169,38 +181,80 @@ const About = () => {
               >
                 BITS Pilani
               </a>
+              , with an 8.3 CGPA
             </p>
+
             <p>
-              Bachelor of Computer Applications ({' '}
+              I completed my{' '}
               <a
                 href="https://singlebucks.blogspot.com/2023/07/bachelors-degree-in-computer-application.html"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                BCA
+                Bachelor of Computer Applications
               </a>{' '}
-              ) from L. N. Mishra Institute, Patna (Affiliated to Aryabhatta Knowledge University).
+              from L. N. Mishra Institute, Patna, affiliated with Aryabhatta Knowledge University,
+              with 79%
             </p>
+
             <p>
-              I enjoy building technical projects, sharing them on my{' '}
+              I also completed a{' '}
+              <a
+                href="https://singlebucks.blogspot.com/2023/06/education.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Diploma in Computer Applications
+              </a>{' '}
+              with 81%
+            </p>
+
+            <p>
+              I completed my Higher Secondary education at{' '}
+              <a
+                href="https://singlebucks.blogspot.com/p/ips_28.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Imperial Public School, Hathwa
+              </a>
+              , under the CBSE board, securing 84.2% in Class 12 and a 10 CGPA in Class 10.
+            </p>
+
+            <p>
+              During school, I served as{' '}
+              <a
+                href="https://singlebucks.blogspot.com/p/ips_28.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                School Captain
+              </a>{' '}
+              for more than a year.
+            </p>
+
+            <p>
+              I build technical projects, share them on my{' '}
               <a
                 href="https://github.com/iamsonukushwaha"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 GitHub
-              </a>{' '}
-              and writing about my experiences and learnings on my{' '}
-              <a
-                href="https://singlebucks.blogspot.com/p/sonu.html"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                personal website
-              </a>{' '}
+              </a>
+              , write about my work on my{' '}
+              <a href="https://singlebucks.blogspot.com" target="_blank" rel="noopener noreferrer">
+                blog website
+              </a>
+              , and you can view my{' '}
+              <a href="https://sonuimages.vercel.app/" target="_blank" rel="noopener noreferrer">
+                photos here
+              </a>
+              .
             </p>
+
             <p>
-              I’m always open to new opportunities, collaborations, and professional connections on{' '}
+              Connect with me on{' '}
               <a
                 href="https://www.linkedin.com/in/sonukumarkushwaha"
                 target="_blank"
@@ -208,8 +262,19 @@ const About = () => {
               >
                 LinkedIn
               </a>
+              , or view my{' '}
+              <a
+                href="https://iamsonukushwaha.github.io/resume/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                resume here
+              </a>
+              .
             </p>
+
             <p>That's me, today. I'll be different tomorrow, hopefully better.</p>
+
             <p>Here are a few technologies I've been working with recently:</p>
           </div>
 
@@ -220,7 +285,11 @@ const About = () => {
 
         <StyledPic>
           <div className="wrapper">
-            <Img fluid={data.avatar.childImageSharp.fluid} alt="Avatar" className="img" />
+            <Img
+              fluid={data.avatar.childImageSharp.fluid}
+              alt="Sonu Kumar Kushwaha"
+              className="img"
+            />
           </div>
         </StyledPic>
       </div>
