@@ -1,11 +1,11 @@
 {
-  "name": "version2",
+  "name": "portfolio",
   "description": "Personal Website",
   "version": "3.0.0",
   "author": "Sonu Kumar Kushwaha <flyingsonu736@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/iamsonukushwaha/version2"
+    "url": "https://github.com/iamsonukushwaha/portfolio"
   },
   "keywords": [
     "gatsby"
