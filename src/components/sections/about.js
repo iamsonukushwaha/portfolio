@@ -218,7 +218,7 @@ const About = () => {
               >
                 Imperial Public School, Hathwa
               </a>
-              , under the CBSE board, securing 84.2% in Class 12 and a 10 CGPA in Class 10.
+              , under the CBSE board, securing 85% in Class 12 and a 10 CGPA in Class 10.
             </p>
 
             <p>
