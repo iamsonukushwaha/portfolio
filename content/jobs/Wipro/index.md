@@ -17,7 +17,7 @@ url: 'https://singlebucks.blogspot.com/p/wipro.html'
 
 **Awards**
 
-- Earned _38 Awards_ and _7 Badges_ on the Wipro Winner Circle Portal.
+- Earned _39 Awards_ and _7 Badges_ on the Wipro Winner Circle Portal.
 - Received the _Best Prodigy Certificate_ for FY 2023–24.
 - Recognized as the _Top Contributor for Cost Savings_ for FY 2024–25.
 - Received the _Unit Award for Red Hat Q3 Challenge 2025_.

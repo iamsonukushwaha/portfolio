@@ -43,7 +43,7 @@ const Contact = () => {
       <h2 className="numbered-heading">Get In Touch</h2>
 
       <p>
-        My inbox is always open. Whether you have a question, an opportunity, or just want to connect, I’ll do my best to respond.
+        My inbox is always open—questions, opportunities, or just a chat. I’ll be happy to connect.
       </p>
 
       <a className="email-link" href={`mailto:${email}`}>

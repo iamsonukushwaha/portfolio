@@ -149,7 +149,7 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              I’m{' '}
+              Hi, I’m{' '}
               <a href="https://sonuimages.vercel.app/" target="_blank" rel="noopener noreferrer">
                 Sonu Kumar Kushwaha
               </a>
